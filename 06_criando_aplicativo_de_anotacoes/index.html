@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <div class="container-anotacao">
+
+            <!-- O correto é usar um textarea para manipular o resize -->
+
+            <!-- <div class="anotacao-single">
+                <textarea placeholder="Sua anotação aqui..."></textarea>
+            </div> -->
+
+        </div>
+
+        <div class="btn-add">+</div>
+
+
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/functions.js"></script> -->
+
+        <script>
+
+        //JavaScript puro e rápido
+        //Mesmo sistema do Jquey mas com JavaScript puro
+        
+        var adicionar = document.querySelector('.btn-add');
+        adicionar.addEventListener('click', ()=>{
+
+            let containerAnotacao = document.querySelector('.container-anotacao');
+            
+            containerAnotacao.innerHTML += `
+            
+            <div class="anotacao-single">
+                <textarea placeholder="Sua anotação aqui..."></textarea>
+            </div>
+            `;
+        })
+
+        </script>
+
+    </body>
+</html>
